@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My First API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/register": {
+            "post": {
+                "summary": "register user",
+                "operationId": "c859b69d08429d7c7c943a47b7f97339",
+                "responses": {
+                    "200": {
+                        "description": "Create a User"
+                    },
+                    "404": {
+                        "description": "page not found with error mobile required and nathinal_code required"
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "summary": "login user",
+                "operationId": "35097562d8831f05726772377482137c",
+                "responses": {
+                    "200": {
+                        "description": "Login a User"
+                    },
+                    "404": {
+                        "description": "page not found with error mobile required and otp required"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
 
+namespace App\Http\Controllers;
+/**
+ * @OA\Info(title="My First API", version="0.1")
+ */
 abstract class Controller
 {
     /**
@@ -9,6 +12,9 @@ abstract class Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    
     public function sendResponse($result, $message)
     {
         $response = [
@@ -39,10 +45,4 @@ abstract class Controller
         return response()->json($response, $code);
     }
 
-    public function test()
-    {
-        {
-            return $this->sendResponse('Test successful', 'API is working');
-          }
-        }
 }
